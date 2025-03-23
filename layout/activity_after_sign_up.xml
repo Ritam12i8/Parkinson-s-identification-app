@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AfterSignUp"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="The quick brown fox jumps over the lazy dog near the riverbank. With every leap, it displays a burst of agility and energy, leaving behind a trail of excitement. 1234! What an extraordinary sight to behold! Can it jump over 5 more obstacles before sunset?"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_below="@id/text1"
+        android:text="Type the above text below and click submit when you are finished:-"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2196F3"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@id/text2"
+        android:layout_marginTop="20dp"
+        android:progressTint="#4CAF50"
+        android:max="100" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Type the text here"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/baseline_text_fields_24">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_layout"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true" />
+    <Button
+        android:id="@+id/refresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/submit_button"
+        android:layout_marginTop="20dp"
+        android:text="Refresh"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/lout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/refresh"
+        android:layout_marginTop="20dp"
+        android:text="Logout"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true" />
+
+
+
+</RelativeLayout>
