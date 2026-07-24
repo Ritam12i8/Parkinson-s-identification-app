@@ -31,6 +31,12 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    // ✅ ✅ ✅ ADD THIS BLOCK
+    buildFeatures {
+        viewBinding = true
+    }
+
 }
 
 dependencies {
@@ -52,6 +58,7 @@ dependencies {
 
     // CameraX (Optional, only keep if needed)
     implementation("androidx.camera:camera-lifecycle:1.3.4")
+    implementation("androidx.activity:activity:1.9.2")
 
     // Testing
     testImplementation("junit:junit:4.13.2")
