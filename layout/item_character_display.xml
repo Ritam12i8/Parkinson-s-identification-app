@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/characterTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="15sp"
+    android:textColor="@android:color/black"
+    android:paddingStart="0dp"   android:paddingEnd="0dp"     android:text=" " tools:text="C"
+    android:includeFontPadding="false"
+    android:minWidth="1sp"         android:minHeight="18sp"       android:gravity="center"
+    android:lineSpacingExtra="0dp" />
